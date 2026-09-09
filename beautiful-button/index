@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+      button {/* this is a comment for the button */
+        padding: 18px 36px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 36px;
+        padding-right: 36px;
+        background-color: #4CAF50; /* Green background */
+        border: 1px solid lightgray;
+      }
+
+      button:hover {
+        background-color: white; /* White background on hover */
+        color:pink; /* pink text on hover */
+        border: 2px solid #af4c90; /* Pink border on hover */
+      } button hover {
+        background-color: white; /* White background on hover */
+        color:pink; /* pink text on hover */
+        border: 2px solid #af4c90; /* Pink border on hover */
+      } transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effects */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+   border-radius: 8px; /* Rounded corners */
+   cursor: pointer; /* Change cursor to pointer on hover */
+   </style>
+  </head>
+  <body>
+    <button>Submit</button>
+   </body>
