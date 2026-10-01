@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Drills</title>
+	<style>
+		div {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		a:link {
+			color: #0645ad;
+		}
+
+		a:visited {
+			color: #6f2da8;
+		}
+
+		.center-demo {
+			width: 500px;
+			height: 240px;
+			margin: 20px auto;
+			padding: 16px;
+			border: 4px dashed #34495e;
+			background-color: #dcefe7;
+			transition: background-color 0.3s ease;
+			position: relative;
+		}
+
+		.center-demo:active {
+			background-color: #f3c969;
+		}
+
+		.centering-inner {
+			width: 180px;
+			height: 80px;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #f3c969;
+			text-align: center;
+		}
+
+		.rotate-demo {
+			height: 80px;
+			background-color: #dcefe7;
+			transform: rotate(-3deg);
+		}
+
+		.scale-demo {
+			height: 80px;
+			margin: 12px auto;
+			background-color: pink;
+			transform: scale(1.1);
+		}
+
+		.shrink-demo {
+			height: 80px;
+			margin: 12px auto;
+			background-color: lightblue;
+			transform: scale(0.8);
+			animation: color-pulse 3s ease-in-out infinite alternate;
+		}
+
+		.skew-demo {
+			height: 80px;
+			margin: 12px auto;
+			background-color: yellow;
+			transform: skew(8deg);
+		}
+
+		@keyframes color-pulse {
+			from {
+				background-color: lightblue;
+			}
+
+			to {
+				background-color: #9be2c5;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="center-demo" style="text-align: left;">left (500px centered): Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		<div class="centering-inner">Centered with translate</div>
+	</div>
+	<div class="rotate-demo" style="text-align: right;">right, rotated: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div class="scale-demo" style="text-align: center;">center, scaled: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div class="shrink-demo" style="text-align: justify;">justify, smaller: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+	<div style="text-align: start;">start: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div style="text-align: end;">end: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div style="text-align: match-parent;">match-parent: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div style="text-align: justify-all;">justify-all: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+	<div style="text-align: inherit;">inherit: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div class="skew-demo" style="text-align: initial;"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew">initial, skewed: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></div>
+</body>
+</html>
